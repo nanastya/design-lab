@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 html {
   line-height: 1.15;
   /* 1 */
@@ -388,5 +389,109 @@ template {
  */
 [hidden] {
   display: none; }
+
+body {
+  font-family: "Lato", sans-serif; }
+
+h1, p {
+  margin-top: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.container {
+  max-width: 58.25rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.9375rem; }
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.flex-col, .hero__container, .title-text__info-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+
+.hero {
+  height: 100vh;
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+  background: url("../images/hero.png") no-repeat center;
+  background-size: cover; }
+  .hero__container {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center; }
+  .hero__logo {
+    max-width: 4.1875rem;
+    max-height: 4.125rem; }
+  .hero__info-wrap {
+    width: 65.6%;
+    text-align: center;
+    color: #fff; }
+  .hero__title {
+    font-size: 3.375rem;
+    margin-bottom: 3.3125rem;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .hero__text {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .hero__scroll {
+    max-width: 1.4375rem;
+    max-height: 2.3125rem; }
+
+.title-text {
+  padding: 9.125rem 0 10rem 0; }
+  .title-text--bg-img {
+    background: url("../images/services.jpg") no-repeat center;
+    background-size: cover; }
+  .title-text__info-wrap {
+    align-items: center;
+    padding: 0 0 1.8125rem 0;
+    border-bottom: 2px solid #3c3c3c;
+    color: #3c3c3c;
+    position: relative; }
+    .title-text__info-wrap:before, .title-text__info-wrap:after {
+      content: '';
+      position: absolute;
+      height: calc(100% - 1.25rem);
+      width: 240px;
+      bottom: 0;
+      border-top: 2px solid #3c3c3c; }
+    .title-text__info-wrap:before {
+      left: 0;
+      border-left: 2px solid #3c3c3c; }
+    .title-text__info-wrap:after {
+      right: 0;
+      border-right: 2px solid #3c3c3c; }
+    .title-text__info-wrap--bg {
+      color: #fff;
+      border-bottom: 2px solid #fff; }
+      .title-text__info-wrap--bg:before, .title-text__info-wrap--bg:after {
+        border-top: 2px solid #fff; }
+      .title-text__info-wrap--bg:before {
+        border-left: 2px solid #fff; }
+      .title-text__info-wrap--bg:after {
+        border-right: 2px solid #fff; }
+  .title-text__title {
+    width: 418px;
+    margin-top: 0;
+    margin-bottom: 4.0625rem;
+    background-color: #fff;
+    font-size: 2.125rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 8px; }
+    .title-text__title--bg {
+      background-color: transparent; }
+  .title-text__text {
+    width: 62%; }
 
 /*# sourceMappingURL=style.css.map */

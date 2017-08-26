@@ -1,0 +1,65 @@
+    $font-size: 34;
+    $line-height-ratio: 6;
+    .title-text {
+      padding: rem(146) 0 rem(160) 0;
+      &--bg-img {
+        @include bg-img('../images/services.jpg');
+      }
+      &__info-wrap {
+        @extend .flex-col;
+        align-items: center;
+        padding: 0 0 rem(29) 0;
+        border-bottom: 2px solid $black-1;
+        color: $black-1;
+        position: relative;
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          height: calc(100% - #{rem( ($font-size+$line-height-ratio)/2)});
+          width: 240px;
+          bottom: 0;
+          border-top: 2px solid $black-1;
+        }
+        &:before {
+          left: 0;
+          border-left: 2px solid $black-1;
+        }
+        &:after {
+          right: 0;
+          border-right: 2px solid $black-1;
+        }
+        &--bg {
+          color: $white;
+          border-bottom: 2px solid $white;
+          &:before,
+          &:after {
+            border-top: 2px solid $white;
+          }
+          &:before {
+            border-left: 2px solid $white;
+          }
+          &:after {
+            border-right: 2px solid $white;
+          }
+        }
+      }
+      &__title {
+        width: 418px;
+        margin-top: 0;
+        margin-bottom: rem(65);
+        background-color: $white;
+        font-size: rem($font-size);
+        line-height: rem($font-size + $line-height-ratio);
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 8px;
+        &--bg {
+          background-color: transparent;
+        }
+      }
+      &__text {
+        width: 62%;
+      }
+    }
