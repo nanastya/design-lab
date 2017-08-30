@@ -1,11 +1,15 @@
 @import 'settings/normalize';
-@import 'settings/typography';
-
 @import 'settings/functions';
+@import 'settings/typography';
 @import 'settings/mixins';
 @import 'settings/variables';
 @import 'settings/global';
 
 @import 'general/hero';
+@import 'general/parts';
+@import 'general/footer';
 
 @import 'parts/title-text';
+@import 'parts/title-icon-text';
+@import 'parts/title-text-btn';
+@import 'parts/images';

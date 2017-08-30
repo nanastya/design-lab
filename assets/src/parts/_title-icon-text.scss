@@ -1,0 +1,32 @@
+.title-icon-text {
+  padding: rem(105) 0 rem(114) 0;
+  &__info-wrap {
+    @extend .title-text__info-wrap;
+    padding: 0;
+  }
+  &__title {
+    margin-bottom: rem(113);
+    @extend .title-text__title;
+  }
+  &__article {
+    width: 65%;
+    margin-bottom: rem(92);
+    text-align: center;
+  }
+  &__icon {
+    max-width: 80px;
+    max-height: 91px;
+    margin-bottom: rem(40);
+  }
+  &__heading {
+    margin-bottom: rem(40);
+    font-size: $heading-font-size;
+    color: $black-1;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+  }
+  &__text {
+    font-size: calc( #{ $text-size + ' - ' + rem(2)} );
+  }
+}

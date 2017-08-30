@@ -1,0 +1,18 @@
+.footer {
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+  &__info-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  &__logo {
+    max-width: rem(35);
+    max-height: rem(37);
+  }
+  &__copyright {
+    margin-bottom: 0;
+    margin-left: rem(36);
+    align-self: center;
+  }
+}

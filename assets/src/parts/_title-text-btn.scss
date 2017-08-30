@@ -1,0 +1,14 @@
+.title-text-btn {
+  &__info-wrap {
+    @extend .title-text__info-wrap;
+  }
+  &__title {
+    @extend .title-text__title;
+  }
+  &__text {
+    @extend .title-text__text;
+  }
+  &__btn {
+    @extend .btn;
+  }
+}
